@@ -6,6 +6,72 @@
     <title>Document</title>
 </head>
 <body>
+
     
+    <div>
+        <p>
+            lalalala
+        </p>
+
+       
+    </div>
+
+    <label>user name</label>
+    <input type="email">
+    <br>
+    <label>password</label>
+    <input type="password">
+
+
+
+    <P id="test" ><b>shand Ari</b>shand Ari</P>
+    <button id="btn1">show text</button>
+    <button id="btn2">show html</button>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <script> 
+        $(document).ready(function(){
+
+        $("p").click(function(){
+            $(this).hide();
+        
+         });
+
+         $("input").focus(function(){
+        $(this).css("background-color",
+
+        "yellow");
+
+    });
+
+    $("input").blur(function(){
+    $(this).css("background-color", "green");
+    });
+
+
+      });
+
+
+      
+
+$("#btn1").click(function(){
+alert("Text: " + $("#test").text());
+});
+$("#btn2").click(function(){
+alert("HTML: " + $("#test").html());
+});
+      
+
+      </script>
+
+
+
+
+
 </body>
 </html>
